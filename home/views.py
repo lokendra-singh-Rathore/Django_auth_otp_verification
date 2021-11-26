@@ -8,8 +8,6 @@ import os
 
 import requests
 
-'
-
 def index(request):
     if request.method=='POST':
         username=request.POST.get('username')
