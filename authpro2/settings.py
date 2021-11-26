@@ -25,7 +25,7 @@ SECRET_KEY = '2evb=_7r&=e9cf$n8y#(huhkrzgorze-rmwtl9%!s_im^8i6_3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['authlokendra.herokuapp.com']
 
 
 AUTH_USER_MODEL= 'home.User'
@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',

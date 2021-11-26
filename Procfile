@@ -1,0 +1,1 @@
+web: gunicorn authpro2.wsgi --log-file -
