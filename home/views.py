@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 from .models import User
 import random
 import os
-from twilio.rest import Client
+
 import requests
 
 import clicksend_client
