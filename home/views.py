@@ -8,11 +8,7 @@ import os
 
 import requests
 
-import clicksend_client
-from clicksend_client import SmsMessage
-from clicksend_client.rest import ApiException
 
-configuration = clicksend_client.Configuration()
 configuration.username = 'lokendra.singh@indianacademyofrobotics.com'
 configuration.password = 'CE988987-6F5E-79C1-DF73-B3DD22CF4589'
 
