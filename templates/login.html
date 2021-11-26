@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+ {% block title %} Login {% endblock %}
+ {% block body %} 
+    <div class="container col-md-4">
+        <form method="POST">
+            
+            {% csrf_token %}
+            <div class="mb-3">
+              <label  class="form-label">Phone</label>
+              <input type="phone" class="form-control" id="phone" name="phone" required>
+            </div>
+            <div class="mb-3">
+              <label  class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" name="password" required >
+            </div>
+            <div style="text-align: center;">
+              <button type="submit" class="btn btn-primary ">Log In</button>
+              <p> Not  have account ?</p>
+              <a class="btn btn-primary" href="{% url 'index' %}" role="button">Sign Up</a>
+            </div>
+            
+          </form>
+
+    </div>
+
+    {% endblock %}

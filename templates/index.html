@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+ {% block title %} Sign-Up {% endblock %}
+ {% block body %} 
+    <div class="container col-md-4">
+        <form method="POST">
+            
+            {% csrf_token %}
+            <div class="mb-3">
+              <label  class="form-label">User Name</label>
+              <input type="text" class="form-control" id="username" name="username" >
+            </div>
+            <div class="mb-3">
+              <label  class="form-label"> Name</label>
+              <input type="text" class="form-control" id="name" name="name"required >
+            </div>
+            <div class="mb-3">
+              <label  class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" name="email" required >
+            </div>
+            <div class="mb-3">
+              <label  class="form-label">Phone</label>
+              <input type="phone" class="form-control" id="phone" name="phone" required>
+            </div>
+            <div class="mb-3">
+              <label  class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <div style="text-align: center;">
+              <button type="submit" class="btn btn-primary ">Sign Up</button>
+              <p> Already have account ?</p>
+              <a class="btn btn-primary" href="{% url 'login' %}" role="button">Log in</a>
+            </div>
+            
+          </form>
+
+    </div>
+
+    {% endblock %}
