@@ -8,9 +8,7 @@ import os
 
 import requests
 
-
-configuration.username = 'lokendra.singh@indianacademyofrobotics.com'
-configuration.password = 'CE988987-6F5E-79C1-DF73-B3DD22CF4589'
+'
 
 def index(request):
     if request.method=='POST':
